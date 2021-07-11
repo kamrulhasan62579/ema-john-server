@@ -60,4 +60,4 @@ app.get('/', function (req, res) {
   res.send('hello world')
 })
 
-app.listen(4001 || process.env.PORT, () => console.log("Listening from 4001"))
+app.listen(process.env.PORT || 4001, () => console.log("Listening from 4001"))
